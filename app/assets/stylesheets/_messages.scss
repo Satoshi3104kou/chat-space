@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  height: 100vh;
+  width: 300px;
+  
+  &__user-name{
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+    
+    
+    &__top-item{
+      display: flex;
+      justify-content: space-between;
+      background-color: #253141; 
+      height: 20px;
+      align-items: center;
+      font-weight: bold;
+      width:100%;
+      color: white;
+      font-size: 16px;
+
+      &__name{
+        font-weight: bold;
+      } 
+      &__icons{
+        background-color: #253141; 
+        display: flex;
+        list-style: none;
+        width: 60px;
+        height: 20px;
+        &__left{
+          color:#ffffff;
+        } 
+        &__right{
+           
+            color:#ffffff;
+          
+          margin-left: 5px;
+        } 
+      }
+    }
+  }   
+   
+   
+  &__group-list{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    text-decoration: none;
+      
+    &__group1{
+        color:#ffffff;
+        text-decoration: none;
+        padding: 20px 20px 40px;
+        font-weight: bold;
+    
+      &__name{
+        font-size: 15px;
+      }
+      &__latest-message{
+        font-size: 11px;
+        margin-top: 5px;
+      }
+
+    }
+   
+  }
+
+}
+
+.chat-main {
+    width: calc(100% - 300px);
+    height: 100vh; 
+    
+
+  &__group-info{
+    background-color: #ffffff; 
+    height: 100px; 
+    width: 100%;
+    display: flex;
+    // border-bottom: thin 1px #eeeee;
+      &__left-box{
+        padding: 35px 0 0 40px;
+     
+        &__current-group{
+          font-size: 20px;
+          color: #333333;
+          margin-bottom: 15px;
+        }
+
+        &__member-list{
+          display: flex;
+          font-size: 12px;
+          color: #999999;
+
+          &__member{
+          }
+        }
+      }
+      
+      &__edit-btn{
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        margin-top: 28px;
+        border: solid 1px #38aef0;
+        position: absolute;
+        right: 40px;
+        color: #38aef0;
+        list-style: none;
+        text-decoration: none;
+      }
+  }
+
+  &__message-list{
+      background-color:#fafafa;
+      height: calc(100vh - 100px); 
+      padding: 46px 40px;
+      width: 100%;
+
+
+    &__message{
+      padding-bottom: 46px;
+
+
+      &__upper{
+        display: flex;
+        margin-bottom: 12px;
+        font-size: 16px;
+        color: #333333;
+      }
+
+      &__text{
+        font-size: 14px;
+        color: #434a54;
+      }
+
+    }
+   
+      &__message2{
+        padding-bottom: 46px;
+
+        &__upper{
+          display: flex;
+          margin-bottom: 12px;
+          font-size: 16px;
+          color: #333333;
+        }
+
+        &__text{
+          font-size: 14px;
+          color: #434a54;
+        }
+
+    }
+  }
+
+  &__message-form{
+    height: 90px;
+    background-color:#d2d2d2;
+    width: calc(100% - 300px);
+    position: absolute;
+    bottom: 0;
+    padding: 20px 40px;
+   
+      
+    &__new-message{
+      display: flex;
+      
+        
+      &__input-box{
+        position: relative;
+        width: 100%;
+        display: flex;
+        height: 50px;
+        background-color: white;
+
+        &__text{
+          width: 100%;
+          color: black;
+        }
+        
+        &__image{
+          font-size: 1.3rem;
+          color: black;
+          line-height: 50px;
+          position: absolute;
+          right: 10px;
+
+          .input-box__image__file{
+            display: none;
+          }
+
+          a{
+            position: relative;
+            
+            .icon{
+              position: absolute;
+              top: -18px;
+              right: 10px;
+              color: black;
+            }
+          }
+        }
+      }   
+      &__submit {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        line-height: 50px;
+      }
+    }
+  }   
+}
