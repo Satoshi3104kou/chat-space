@@ -37,6 +37,12 @@
         list-style: none;
         width: 60px;
         height: 20px;
+
+        a{
+          list-style: none;
+          color: white;
+        }
+
         &__left{
           color:#ffffff;
         } 
@@ -61,15 +67,19 @@
         text-decoration: none;
         padding: 20px 20px 40px;
         font-weight: bold;
-    
-      &__name{
-        font-size: 15px;
-      }
-      &__message{
-        font-size: 11px;
-        margin-top: 5px;
-      }
 
+      &__color{
+        color: white;
+      }
+    
+        &__name{
+          font-size: 15px;
+        }
+        &__message{
+          font-size: 11px;
+          margin-top: 5px;
+        }
+      
     }
    
   }
@@ -117,48 +127,38 @@
         color: #38aef0;
         list-style: none;
         text-decoration: none;
+
+        &__btn{
+          text-decoration: none;
+          color: #38aef0;
+        }
+
+
       }
   }
 
-  &__message-list{
+  &__message{
       background-color:#fafafa;
-      height: calc(100vh - 100px); 
+      height:200px; 
       padding: 46px 40px;
       width: 100%;
 
 
-    &__message{
+    &__upper__message{
       padding-bottom: 46px;
 
 
-      &__upper{
+      &__user-name{
         display: flex;
         margin-bottom: 12px;
         font-size: 16px;
         color: #333333;
       }
 
-      &__text{
+      &__date{
         font-size: 14px;
         color: #434a54;
       }
-
-    }
-   
-      &__message2{
-        padding-bottom: 46px;
-
-        &__upper{
-          display: flex;
-          margin-bottom: 12px;
-          font-size: 16px;
-          color: #333333;
-        }
-
-        &__text{
-          font-size: 14px;
-          color: #434a54;
-        }
 
     }
   }
@@ -172,54 +172,61 @@
     padding: 20px 40px;
    
       
-    &__new-message{
-      display: flex;
+    
       
-        
-      &__input-box{
-        position: relative;
-        width: 100%;
+      .new_message{
         display: flex;
-        height: 50px;
-        background-color: white;
-
-        &__text{
-          width: 100%;
-          color: black;
+     
+        // .chat-main__message-form__new-message__input-box{
+        //   position: relative;
+        //   width: 100%;
+        //   height: 50px;
+        //   background-color: white;
+          
+          
+        .chat-main__message-form__new-message--content{
+          flex-grow: 1;
+          position: relative;
         }
-        
-        &__image{
-          font-size: 1.3rem;
-          color: black;
-          line-height: 50px;
-          position: absolute;
-          right: 10px;
 
-          .input-box__image__file{
-            display: none;
+          .chat-main__message-form__new-message__input-box__text{
+            width: 100%;
+            color: black;
+            flex-grow: 1;
+            height: 50px;
           }
-
-          a{
-            position: relative;
-            
-            .icon{
-              position: absolute;
-              top: -18px;
-              right: 10px;
+          
+            .chat-main__message-form__new-message__input-box__image{
+              font-size: 1.3rem;
               color: black;
+              line-height: 50px;
+              position: absolute;
+              right: 10px;
+
+            .input-box__image__file{
+              display: none;
+              a{
+                // position: relative;
+
+                .icon{
+                  top: -18px;
+                  right: 10px;
+                  color: black;
+                }
+              }
             }
-          }
+         }
+        
+        .chat-main__message-form__new-message__submit {
+          width: 100px;
+          height: 50px;
+          // padding: 0 30px;
+          // margin-left: 15px;
+          background-color: #38aef0;
+          color: white;
+          line-height: 50px;
         }
-      }   
-      &__submit {
-        width: 100px;
-        height: 50px;
-        padding: 0 30px;
-        margin-left: 15px;
-        background-color: #38aef0;
-        color: white;
-        line-height: 50px;
       }
-    }
+    
   }   
 }
