@@ -53,7 +53,6 @@ $('#new_message').on('submit', function(e){
  })
   .done(function(data){
     var html = buildHTML(data);
-    console.log(html)
     $('.chat-main__messages').append(html);      
     $('form')[0].reset();
     $('.chat-main__message-form__new-message__submit').attr('disabled', false);
