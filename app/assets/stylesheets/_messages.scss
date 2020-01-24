@@ -89,13 +89,15 @@
 .chat-main {
     width: calc(100% - 300px);
     height: 100vh; 
-    
+   
 
   &__group-info{
     background-color: #ffffff; 
     height: 100px; 
     width: 100%;
     display: flex;
+
+  
     
       &__left-box{
         padding: 35px 0 0 40px;
@@ -132,36 +134,42 @@
           text-decoration: none;
           color: #38aef0;
         }
-
-
       }
   }
 
-  &__message{
-      background-color:#fafafa;
-      height:200px; 
-      padding: 46px 40px;
-      width: 100%;
+  .chat-main__messages{
+    overflow: scroll;
+    height: calc(100vh - 190px);
+
+  
+
+    .chat-main__message{
+        background-color:#fafafa;
+        height:120px; 
+        padding: 15px 40px;
+        width: 100%;
 
 
-    &__upper__message{
-      padding-bottom: 46px;
+      &__upper__message{
+        padding-bottom: 16px;
 
 
-      &__user-name{
-        display: flex;
-        margin-bottom: 12px;
-        font-size: 16px;
-        color: #333333;
+        &__user-name{
+          display: flex;
+          margin-bottom: 25px;
+          font-size: 16px;
+          color: #333333;
+        }
+
+        &__date{
+          font-size: 14px;
+          color: #434a54;
+        }
+
       }
-
-      &__date{
-        font-size: 14px;
-        color: #434a54;
-      }
-
     }
   }
+
 
   &__message-form{
     height: 90px;
@@ -169,7 +177,7 @@
     width: calc(100% - 300px);
     position: absolute;
     bottom: 0;
-    padding: 20px 40px;
+    padding: 10px 40px;
    
       
     
@@ -194,6 +202,7 @@
             color: black;
             flex-grow: 1;
             height: 50px;
+            padding: 10px;
           }
           
             .chat-main__message-form__new-message__input-box__image{
