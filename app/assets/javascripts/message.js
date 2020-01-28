@@ -65,7 +65,7 @@ $('#new_message').on('submit', function(e){
     alert("メッセージ送信に失敗しました");
   })
   .always(function(){    
-    $('.chat-main__message-form__new-message__submit').attr('disabled', false);
+    $('.chat-main__message-form__new-message__submit__btn').attr('disabled', false);
   });
 })
 var reloadMessages = function() {
