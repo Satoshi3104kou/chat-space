@@ -4,11 +4,11 @@ $(function(){
      var html =
       `<div class="message" data-message-id=${message.id} >
         <div class="chat-main__message">
-          <div class="chat-main__message__upper-message">
-            <div class="chat-main__message__upper-message__user-name">
+          <div class="chat-main__message__upper__message">
+            <div class="chat-main__message__upper__message__user-name">
               ${message.user_name}
             </div>
-            <div class="chat-main__message__upper-message__date">
+            <div class="chat-main__message__upper__message__date">
               ${message.date}
             </div>
           </div>
@@ -25,11 +25,11 @@ $(function(){
     var html =
     `<div class="message" data-message-id=${message.id}>
       <div class="chat-main__message">
-        <div class="chat-main__message__upper-message">
-          <div class="chat-main__message__upper-message__user-name">
+        <div class="chat-main__message__upper__message">
+          <div class="chat-main__message__upper__message__user-name">
             ${message.user_name}
           </div>
-          <div class="chat-main__message__upper-message__date">
+          <div class="chat-main__message__upper__message__date">
             ${message.date}
           </div>
         </div>
