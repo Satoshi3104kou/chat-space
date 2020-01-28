@@ -15,6 +15,8 @@
     display: flex;
     align-items: center;
     padding: 0 20px; 
+    font-size: 16px;
+    color: white;
     
     
     &__top-item{
@@ -26,17 +28,18 @@
       font-weight: bold;
       width:100%;
       color: white;
-      font-size: 16px;
+      
 
       &__name{
         font-weight: bold;
+        font-size: 16px;
       } 
       &__icons{
         background-color: #253141; 
         display: flex;
         list-style: none;
-        width: 60px;
         height: 20px;
+        font-weight: lighter;;
 
         a{
           list-style: none;
@@ -44,13 +47,11 @@
         }
 
         &__left{
-          color:#ffffff;
+
+          margin-right: 5px;
         } 
         &__right{
-           
-            color:#ffffff;
           
-          margin-left: 5px;
         } 
       }
     }
@@ -60,25 +61,26 @@
   &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    text-decoration: none;
-      
-    &__group{
-        color:#ffffff;
-        text-decoration: none;
-        padding: 20px 20px 40px;
-        font-weight: bold;
-
-      &__color{
-        color: white;
-      }
     
-        &__name{
-          font-size: 15px;
-        }
-        &__message{
-          font-size: 11px;
-          margin-top: 5px;
-        }
+      
+    .group{
+      color:#ffffff;
+      text-decoration: none;
+      padding: 20px 20px 40px;
+
+
+      .side-bar__group-list__group__color{
+      color: white;
+      text-decoration: none;
+      }
+  
+      .group__name{
+        font-size: 15px;
+      }
+      .group__message{
+        font-size: 11px;
+        margin-top: 5px;
+      }
       
     }
    
@@ -140,33 +142,35 @@
   .chat-main__messages{
     overflow: scroll;
     height: calc(100vh - 190px);
-
-  
+    padding: 46px 40px;
+    background-color: #fafafa;
 
     .chat-main__message{
-        background-color:#fafafa;
-        height:120px; 
-        padding: 15px 40px;
-        width: 100%;
-
+        padding-bottom: 40px;
 
       &__upper__message{
         padding-bottom: 16px;
-
+        display: flex;
 
         &__user-name{
-          display: flex;
-          margin-bottom: 25px;
           font-size: 16px;
           color: #333333;
+          margin-right: 10px;
+          font-weight: bold;;
         }
 
         &__date{
-          font-size: 14px;
-          color: #434a54;
+          font-size: 10px;
+          color: #999999;
         }
-
       }
+      .lower-message{
+        color: #434a54;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+
     }
   }
 
@@ -178,15 +182,10 @@
     position: absolute;
     bottom: 0;
     padding: 20px 40px;
-   
-      
-    
-      
+     
       .new_message{
         display: flex;
-     
        
-          
         .chat-main__message-form__new-message--content{
           flex-grow: 1;
           position: relative;
@@ -221,7 +220,7 @@
             }
          }
         
-        .chat-main__message-form__new-message__submit {
+        .chat-main__message-form__new-message__submit__btn {
           width: 100px;
           height: 50px;
           // padding: 0 30px;
@@ -229,6 +228,7 @@
           background-color: #38aef0;
           color: white;
           line-height: 50px;
+          margin-left: 15px;
         }
       }
     

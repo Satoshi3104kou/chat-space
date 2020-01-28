@@ -6,6 +6,7 @@
       .chat-main__group-info__left-box__member-list
         .chat-main__group-info__left-box__member-list__member
           -@group.users.each do |user|
+           
             =user.name
     .chat-main__group-info__edit-btn
       =link_to "Edit", edit_group_path(@group.id),class: 'chat-main__group-info__edit-btn__btn'
@@ -25,6 +26,6 @@
             = f.file_field :image, class: 'input-box__image__file'
       
         .chat-main__message-form__new-message__submit
-          = f.submit 'Send', class: 'chat-main__message-form__new-message__submit'
+          = f.submit 'Send', class: 'chat-main__message-form__new-message__submit__btn'
     
    
